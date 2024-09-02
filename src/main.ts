@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import { createRouter, createMemoryHistory } from 'vue-router'
 import { createPinia } from 'pinia'
 
-import './assets/styles/global.css'
+import './assets/styles/global.scss'
 
 import App from './App.vue'
 import routes from "./pages/routes";
