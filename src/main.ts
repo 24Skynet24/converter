@@ -1,21 +1,19 @@
 import { createApp } from 'vue'
 import { createRouter, createMemoryHistory } from 'vue-router'
+import { createPinia } from 'pinia'
+
 import './assets/styles/global.css'
+
 import App from './App.vue'
-
-import HomePage from './pages/HomePage.vue'
-
-
-const routes = [
-    { path: '/', component: HomePage },
-    { path: '/convert', component: () => import("./pages/ConvertPage.vue") },
-]
+import routes from "./pages/routes";
 
 const router = createRouter({
     history: createMemoryHistory(),
     routes,
 })
+const pinia = createPinia()
+const app = createApp(App)
 
-createApp(App)
-    .use(router)
-    .mount('#app')
+app.use(router)
+app.use(pinia)
+app.mount('#app')
