@@ -4,9 +4,9 @@ import ExchangeCmp from "../components/ExchangeCmp.vue";
 </script>
 
 <template>
-  <section class="home_section flex-center">
+  <section class="home_section flex-center flex-column">
     <h1>exchange rate</h1>
-    <ul>
+    <ul class="flex-column">
       <li>
         <exchange-cmp :currencyName="'RUB'" :currencyVal="101"/>
       </li>
@@ -19,18 +19,12 @@ import ExchangeCmp from "../components/ExchangeCmp.vue";
 .home_section {
   width: 100%;
   height: 100%;
-  flex-direction: column;
   padding-top: 10rem;
 
   h1 {
     text-transform: uppercase;
     margin-bottom: 5rem;
     font-size: 3.2rem;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
   }
 }
 
