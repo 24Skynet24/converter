@@ -10,7 +10,7 @@ const names = useStore.currenciesName
     <router-link to="/" exact active-class="link">Главная</router-link>
     <router-link to="/convert" exact active-class="link">Конвертация</router-link>
     <div class="dropdown">
-      <span>{{ names[useStore.activeCurrency] }}</span>
+      <span>{{ useStore.getCurrentCurrency }}</span>
       <ul class="flex-column">
         <li v-for="(item, id) in names" :key="`currencyName_${id}`">
           <span @click="useStore.setActiveCurrency(id)">{{ item }}</span>
