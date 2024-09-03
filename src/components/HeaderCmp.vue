@@ -4,8 +4,8 @@
 
 <template>
   <header class="flex-center">
-    <router-link to="/" exact>Главная</router-link>
-    <router-link to="/convert" exact>Конвертация</router-link>
+    <router-link to="/" exact active-class="link">Главная</router-link>
+    <router-link to="/convert" exact active-class="link">Конвертация</router-link>
   </header>
 </template>
 
@@ -22,6 +22,10 @@ header {
     &:hover {
       color: #4941e3;
     }
+  }
+
+  .link {
+    color: #4941e3;
   }
 }
 
