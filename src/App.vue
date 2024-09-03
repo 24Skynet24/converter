@@ -4,7 +4,7 @@ import HeaderCmp from "./components/HeaderCmp.vue";
 </script>
 
 <template>
-  <div>
+  <div class="content">
     <header-cmp/>
     <main>
       <router-view/>
