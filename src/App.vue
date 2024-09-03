@@ -1,6 +1,5 @@
 <script setup lang="ts">
-
-import HeaderCmp from "./components/HeaderCmp.vue";
+import HeaderCmp from "./components/HeaderCmp.vue"
 </script>
 
 <template>
